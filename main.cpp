@@ -4,5 +4,9 @@
 using namespace std;
 
 int main () {
+	
+	ChainLink red = ChainLink("red");
+
+
 	return 0;
 }
