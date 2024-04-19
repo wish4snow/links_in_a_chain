@@ -6,12 +6,16 @@ int main () {
 
 	ChainLink red = ChainLink("red");
 	ChainLink white = ChainLink("white");
+	ChainLink blue = ChainLink("blue");
+	
+	
+	Node one = Node(&red);
+	Node two = Node(&white, &one);
+	Node three = Node(&blue, &two);
 
-	Node one = new Node(&red);
-	Node two =  new Node(&white, &one);
+	cout << &one << endl;
 	Node next_node = one.next();
-
-	//cout << next_node.give_data().get_color();
+	cout << next_node.give_data().get_color() << endl;
 
 
 	return 0;
